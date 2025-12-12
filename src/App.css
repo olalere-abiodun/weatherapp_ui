@@ -77,6 +77,28 @@ header {
 .search-container input::placeholder {
   color: var(--neutral-0);
 }
+.top {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+}
+
+.top h1, .top p {
+  margin: 0;
+}
+.top h1{
+  font-family: BricolageGrotesque, sans-serif;
+  color: var(--neutral-0);
+  font-size: 32px;
+}
+.top p {
+  color: var(--neutral-0);
+  font-size: 12px;
+  text-align: center;
+  width: 340px;
+}
 /* header dropdown  */
 .dropdown-container {
   position: relative;
@@ -97,6 +119,20 @@ header {
   color: var(--neutral-0);
   cursor: pointer;
   font-size: 14px;
+}
+.retry-button {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: var(--neutral-700);
+  color: var(--neutral-0);
+  cursor: pointer;
+  font-size: 12px;
 }
 
 .dropdown-menu {

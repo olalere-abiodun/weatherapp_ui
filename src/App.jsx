@@ -2,6 +2,7 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Dashboard from './pages/Dashboard.jsx'
 import Invalid from './pages/Invalid.jsx'
+import Api from './pages/Api.jsx'
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Routes>
       <Route path="/" element={<Dashboard />} />
       <Route path="/invalid" element={<Invalid />} />
+      <Route path="/api" element={<Api />} />
     </Routes>
     </BrowserRouter>
   )
