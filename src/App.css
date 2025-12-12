@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@font-face {
+  font-family: 'BricolageGrotesque';
+  src: url('/assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Bold.ttf')
+    format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 :root {
   /* Neutral Colors */
   --neutral-900: hsl(243, 96%, 9%);
@@ -28,10 +35,48 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
+}
+.search-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-self: center;
 }
 
-
-
+.search-container {
+  position: relative;
+  width: 350px;
+}
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+}
+.search-container input {
+  width: 100%;
+  padding: 12px 12px 12px 50px;
+  border-radius: 8px;
+  border: none;
+  background: var(--neutral-800);
+  color: var(--neutral-0);
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.search-button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background: var(--blue-500);
+  color: var(--neutral-0);
+  cursor: pointer;
+  font-size: 12px;
+}
+.search-container input::placeholder {
+  color: var(--neutral-0);
+}
 /* header dropdown  */
 .dropdown-container {
   position: relative;
@@ -59,7 +104,7 @@ header {
   top: 45px;
   right: 0;
   background: var(--neutral-800);
-  padding: 10px;
+  padding: 8px;
   width: 150px;
   border-radius: 14px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
@@ -89,7 +134,7 @@ hr {
 }
 
 .dropdown-item {
-  padding: 8px 10px;
+  padding: 8px 8px;
   border-radius: 8px;
   cursor: pointer;
   color: var(--neutral-0);
