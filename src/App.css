@@ -38,6 +38,7 @@ header {
   margin-bottom: 50px;
 }
 .search-wrapper {
+  margin-top: 20px;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -46,7 +47,7 @@ header {
 
 .search-container {
   position: relative;
-  width: 350px;
+  width: 370px;
 }
 .search-icon {
   position: absolute;
@@ -91,7 +92,7 @@ header {
 .top h1{
   font-family: BricolageGrotesque, sans-serif;
   color: var(--neutral-0);
-  font-size: 32px;
+  font-size: 36px;
 }
 .top p {
   color: var(--neutral-0);
@@ -183,4 +184,13 @@ hr {
 
 .dropdown-item.active {
   background: var(--neutral-600);
+}
+.today-weather-card {
+  background-image: url(./assets/images/bg-today-large.svg);
+  height: 286px;
+  width: 800px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+ 
 }

@@ -8,7 +8,8 @@ function Dashboard() {
   return (
     <>
       <Header />
-      <h1 style={{ fontFamily: "BricolageGrotesque", color: "white", fontSize: "36px", textAlign: "center", marginBottom: "30px" }}>How's the sky looking today?</h1>
+      <div className='top'>
+        <h1>How's the sky looking today?</h1>
       <div className='search-wrapper'>
         <div className='search-container'>
           <img src="/assets/images/icon-search.svg" alt="" className='search-icon'/>
@@ -20,6 +21,22 @@ function Dashboard() {
         <button className='search-button'>
           Search
         </button>
+      </div>
+      </div>
+      <div>
+        <div>
+          {/* Weather details will go here */}
+          <div style={{
+    backgroundImage: "url('./assets/images/bg-today-large.svg')",
+  }} className="today-weather-card">
+
+    <p>Hello</p>
+
+          </div>
+        </div>
+        <div>
+          {/* Additional information will go here */}
+        </div>
       </div>
       
     </>
