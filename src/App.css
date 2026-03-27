@@ -188,9 +188,24 @@ hr {
 .today-weather-card {
   background-image: url(./assets/images/bg-today-large.svg);
   height: 286px;
-  width: 800px;
+  width: 690px;
   background-size: cover;
   background-position: center;
   border-radius: 20px;
- 
+}
+.mood-section{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+}
+.mood {
+  padding: 10px;
+  width: 150px;
+  height: 100px;
+  background-color: var(--neutral-700) ;
+  box-sizing: border-box;
+}
+.mood h4, .mood h1 {
+  margin: 0;
 }

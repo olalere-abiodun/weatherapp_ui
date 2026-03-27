@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import Header from '../components/Header.jsx'
+import Mood from '../components/Mood.jsx'
 import '../App.css'
 
 function Dashboard() {
@@ -34,8 +35,9 @@ function Dashboard() {
 
           </div>
         </div>
-        <div>
+        <div className='mood-section'>
           {/* Additional information will go here */}
+          <Mood />
         </div>
       </div>
       
